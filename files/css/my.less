@@ -1,0 +1,29 @@
+@color:pink;
+@fontsize14:14px;
+body{
+    background-color: @color;
+}
+div{
+    font-size: @fontsize14;
+}
+.nav{
+    &::before{
+        display: block;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: aqua;
+    }
+    .logo{
+        color: #f524a5;
+        &:hover{
+            color: #666;
+        }
+    }
+}
+@width:100px;
+.banner{
+    width: @width / 5 ;
+    height: 200px;
+    background-color: blueviolet;
+}

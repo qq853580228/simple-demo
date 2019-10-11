@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a {
+            /* 移动端点击链接默认有高亮样式需要去除 */
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        input {
+            /* 移动端要加上如下属性，才能给按钮和输入框自定义属性 */
+            -webkit-appearance: none;
+        }
+        
+        a,
+        img {
+            /* 移动端长按图片或者链接几秒后松开鼠标会弹出右键菜单，如下方法可以禁用 */
+            -webkit-touch-callout: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">私密马赛</a>
+    <input type="button" value="按钮">
+</body>
+
+</html>
